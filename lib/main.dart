@@ -50,8 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
     print("attempting");
     // const String? url =
     //      "https://www.googleapis.com/blogger/v3/blogs/YOUR BLOGGER ID/posts/?key=YOUR API KEY";
-    const String? url =
-        "https://www.googleapis.com/blogger/v3/blogs/3608399777225646235/posts/?key=AIzaSyBcrCg4Hx4xFy_pfooLvstmch41Rs-U0SM";
+   
     final response = await http.get(Uri.parse(url));
     print(response);
     if (response.statusCode == 200) {
